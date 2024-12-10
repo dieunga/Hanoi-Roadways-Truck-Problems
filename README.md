@@ -9,7 +9,7 @@ The company faces inefficiencies in loading parcels onto trucks, as goods are lo
 Develop an efficient system to address the unregulated truck loading process. This solution will optimize the loading order of parcels to ensure drivers can quickly and easily locate goods for delivery, reducing delays, improving overall delivery efficiency, and enhancing customer satisfaction. The solution will also help restore the company's reputation and streamline operations.
 
 **Input:**
-It is expected that the user will provide the program a CSV file or an Excel file, other file types won't work. See sample_input_data.xlsx/sample_input_data.csv for best example.
+It is expected that the user will provide the program a CSV file or an Excel file, other file types won't work. See ``sample_input_data.xlsx``/``sample_input_data.csv`` for best example.
 
 **Output:**
 - Text file of optimized loading plan (ordered list of parcels).
@@ -23,7 +23,7 @@ Drivers frequently travel to cities where there are no parcels to deliver, causi
 Create a dynamic route planning system to prevent drivers from traveling to cities without parcels for delivery. This solution will customize delivery routes based on the current trip's requirements, reducing unnecessary travel, saving time and resources, and boosting driver satisfaction. It will also provide a backup system using grid coordinates to ensure operations run smoothly in case of IT failures.
 
 **Input:**
-It is expected that the user will provide the program a CSV file or an Excel file, other file types won't work. See sample_input_data.xlsx/sample_input_data.csv for best example.
+It is expected that the user will provide the program a CSV file or an Excel file, other file types won't work. See ``sample_input_data.xlsx``/``sample_input_data.csv`` for best example.
 
 **Output:**
 - Route plan
