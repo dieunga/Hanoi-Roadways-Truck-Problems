@@ -1,7 +1,7 @@
 # Hanoi-Roadways-Truck-Problems
 
 ## Overview
-### Scenario 1: Truck Loading Problem
+### Milestone 1: Truck Loading Problem
 **Problem:**
 The company faces inefficiencies in loading parcels onto trucks, as goods are loaded randomly. This causes significant delays when drivers search for packages at delivery destinations, leading to driver frustration, poor delivery performance, and a declining reputation for the company.
 
@@ -15,7 +15,7 @@ It is expected that the user will provide the program a CSV file or an Excel fil
 - Text file of optimized loading plan (ordered list of parcels).
 - Cash invoice for each customer will be exported as seperated text files for easy management.
 
-### Scenario 2: Dynamic Truck Route Allocation
+### Milestone 2: Dynamic Truck Route Allocation
 **Problem:**
 Drivers frequently travel to cities where there are no parcels to deliver, causing frustration and wasting time and resources. This inefficiency stems from the lack of a customized route planning system, as the current process relies on simple, static routing methods.
 
@@ -28,3 +28,44 @@ It is expected that the user will provide the program a CSV file or an Excel fil
 **Output:**
 - Route plan
 - Backup map with coordinates of cities
+
+## Solution 
+### Features 
+- **Route Optimization:** Implements algorithms like the nearest neighbor and other heuristic approaches to find the most efficient delivery routes.
+- **Greedy Algorithms:** Uses greedy methods for solving route planning problems efficiently.
+- **Scalability:** Designed to handle large datasets representing real-world road networks.
+- **Extensibility:** Modular codebase that allows for easy customization and expansion.
+
+## Prereuisites 
+Before running the program, enseure you have the following installed:
+- Python 3.8 or higher
+- Required Python libraries (listed in ``requirements.txt``)
+
+## Installation 
+1. Clone the repository
+```
+git clone https://github.com/dieunga/Hanoi-Roadways-Truck-Problems.git
+```
+
+2. Navigate to the project directory
+```
+cd Hanoi-Roadways-Truck-Problems
+```
+
+3. Install the required dependencies
+```
+pip install -r requirements.txt
+```
+
+## Usage 
+1. Prepare your data
+   - Make sure your data is stored in CSV/Excel file and has the required attributes to have the best results
+
+2. Run the file
+   - Solution for Milestone 1 is stored in ``scenario1.py``
+   - Solution for Milestone 2 is stored in ``scenario2.py``
+   - Then run the program
+     ```
+     python scenario.py
+     ```
+3. View your results in the customize folders/files (Only the route plan will be displayed in your terminal)
