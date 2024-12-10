@@ -65,6 +65,7 @@ pip install -r requirements.txt
    - Solution for Milestone 1 is stored in ``scenario1.py``
    - Solution for Milestone 2 is stored in ``scenario2.py``
    - Then run the program
+     
      ```
      python scenario.py
      ```
