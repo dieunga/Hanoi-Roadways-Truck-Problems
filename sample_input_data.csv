@@ -1,0 +1,11 @@
+Parcel ID,Destination,Recipient,Weight (kg),Date,Size,Rate per km (VND),Distance (km)
+ASHP01,Hai Phong,Customer A,5,8/12/2024,Small,2000,100
+AMDN02,Da Nang,Customer B,10,9/25/2024,Medium,2000,300
+AMNT03,Nha Trang,Customer C,8,7/10/2024,Medium,2000,450
+ALDL04,Dalat,Customer D,12,6/5/2024,Large,2000,500
+AOHCMC05,HCMC,Customer E,16,10/15/2024,Oversize,5000,600
+ASHP06,Hai Phong,Customer F,7,7/11/2024,Small,2000,100
+AMDN07,Da Nang,Customer G,9,3/7/2024,Medium,2000,300
+ASNT08,Nha Trang,Customer H,6,11/10/2024,Small,2000,450
+ALDL09,Dalat,Customer I,13,2/9/2024,Large,2000,500
+ALHCMC10,HCMC,Customer J,10,23/10/2024,Large,2000,600
