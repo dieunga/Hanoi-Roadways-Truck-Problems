@@ -69,29 +69,40 @@ def backup_map(sorted_destination, start_destination, coordinates):
         end_y, end_x = coordinates[ending_point][0]
 
         plt.plot([start_x, end_x], [start_y, end_y], 'c--')
-
+    
+    #Map details
     plt.title('Backup Map')
     plt.xlabel('Longtitude')
     plt.ylabel('Langtitude')
 
     plt.xlim(105, 110)
     plt.ylim(5, 30)
-    #The figure will pop up for the user to see
-    plt.show()
-    
-route_plan_output, sorted_cities = route_plan(df, 'Destination', 'Distance (km)')
-backup_map_output = backup_map(sorted_cities, 'Hanoi', coordinates)
 
-#User inputs for route plan
-user_choice1 = input("Do you want to export Route Plan? (y/n): ")
-user_choice1 = user_choice1.lower()
-if user_choice1 in ['y', 'yes']:
-    print('='*20 + 'ROUTE PLAN' + '='*20)
-    print(' - '.join(route_plan_output))
+    
+
+while True: 
+    user_choice1 = input("Do you want to export Route Plan? (y/n): ")
+    user_choice1 = user_choice1.lower()
+    if user_choice1 in ['y', 'yes']:
+        route_plan_output, sorted_cities = route_plan(df, 'Destination', 'Distance (km)')
+        print('='*20 + 'ROUTE PLAN' + '='*20)
+        print(' --> '.join(route_plan_output))
+        break
+    elif user_choice1 in ['n', 'no']:
+        break
+    else:
+        print("Invalid input. Please try again.")
 
 #User inputs for backup map
-user_choice2 = input("Do you want to export Backup Map? (y/n): ")
-user_choice2 = user_choice2.lower()
-if user_choice2 in ['y', 'yes']:
-    file_export = input("Type desired file name: ")
-    plt.savefig(f"{file_export}.png")
+while True:
+    user_choice2 = input("Do you want to export Backup Map? (y/n): ")
+    user_choice2 = user_choice2.lower()
+    if user_choice2 in ['y', 'yes']:
+        backup_map_output = backup_map(sorted_cities, 'Hanoi', coordinates)
+        file_export = input("Type desired file name: ")
+        plt.savefig(f"{file_export}.png")
+        break
+    elif user_choice2 in ['n', 'no']:
+        break
+    else:
+        print("Invalid input. Please try again.")
